@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uplift - ISL to Text Translation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logos">
+          <div class="logo">Uplift</div>
+          <img src="logo.jpg" alt="" class="logo-img" />
+        </div>
+
+        <ul class="nav-links">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#">About</a></li>
+          <li class="link"><a href="#">Community</a></li>
+          <li class="link"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="intro-section">
+        <div class="intro-text">
+          <h1>Empowering the Deaf Community</h1>
+          <p>
+            Bridging communication gaps with real-time Indian Sign Language to
+            text translation.
+          </p>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+
+        <div class="intro-image">
+          <img src="image.jpg" alt="Empowerment through Communication" />
+        </div>
+      </section>
+
+      <section class="translation-section">
+        <h2>Translate ISL to Text</h2>
+        <div class="cam-btns">
+          <button id="start-cam-btn" class="capture-btn">Camera Start</button>
+          <button id="end-cam-btn" class="capture-btn">Camera End</button>
+        </div>
+
+        <div class="video-container">
+          <video id="video" autoplay></video>
+          <canvas id="canvas" class="hidden"></canvas>
+        </div>
+        <div class="other-btns">
+          <button id="capture-btn" class="capture-btn">Capture Sign</button>
+
+          <select style="margin-left: 1rem;" id="language-select">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="fr">Bengali</option>
+            <option value="es">Marathi</option>
+                   
+          </select>
+          <i style="margin-left: 0.5rem;"class="fas fa-volume-up"></i>
+        </div>
+
+        <div id="translation-output">
+          <p id="translated-text">Your translation will appear here...</p>
+        </div>
+      </section>
+
+      <section class="features-section">
+        <h2>Why Uplift?</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Inclusive Design</h3>
+            <p>
+              Our platform is designed with accessibility in mind, ensuring that
+              everyone can use it effectively.
+            </p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-comments"></i>
+            <h3>Real-Time Translation</h3>
+            <p>
+              Instantly translate Indian Sign Language to text, making
+              communication seamless.
+            </p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-users"></i>
+            <h3>Community Support</h3>
+            <p>
+              Join a community of like-minded individuals working towards a
+              common goal of empowerment.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Uplift | Empowering the Deaf Community</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
